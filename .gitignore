@@ -3,18 +3,44 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
 # Virtual Environments
 venv/
 .venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 *-checkpoint.ipynb
 
-# Streamlit
+# Streamlit local configurations & credentials
 .streamlit/secrets.toml
+.streamlit/*.local.*
 
 # IDEs and Code Editors
 .vscode/
@@ -22,17 +48,42 @@ ENV/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
 
 # Operating System Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+[Dd]esktop.ini
 
-# Environment variables
+# Environment variables & secrets
 .env
 .env.*
 !.env.example
 
+# Testing & code coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
 # Logs & temporary files
 *.log
 *.tmp
+*.bak
 scratch/
+temp/
+tmp/
