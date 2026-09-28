@@ -57,7 +57,11 @@ ATM_Cash_Prediction/
 │   ├── 04_Risk_Alerts.py           # Early Warning Matrix, Urgency Scatter & Risk Distribution
 │   ├── 05_Replenishment_Planner.py # Top-N Courier Dispatch Manifest & Refill Sizing Calculator
 │   ├── 06_Model_Performance.py     # Forecasting Benchmarks, ROC-AUC / PR-AUC & Feature Gain
-│   └── 07_Policy_Simulator.py      # 59-Day Empirical Policy Backtesting (Fixed vs Model-driven)
+│   ├── 07_Policy_Simulator.py      # Page 7: 59-Day Empirical Policy Backtesting (Fixed vs Model-driven)
+│   └── 08_Report_PDF.py            # Page 8: Research Project Report (PDF Viewer & Download)
+│
+├── reports/
+│   └── ATM_Cash_Management_Project_Report.pdf # Complete 34-page academic research dissertation
 │
 ├── utils/
 │   ├── styling.py                  # Financial enterprise theme, badges, cards & Plotly templates
