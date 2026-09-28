@@ -139,6 +139,7 @@ def main():
                 st.markdown(f"<h2 style='margin: 0; color: #0F172A; font-weight: 700; font-size: 1.6rem;'>{atm_current['atm_id']}</h2>", unsafe_allow_html=True)
                 st.caption(f"📍 **{atm_current['city']}** • {atm_current['atm_location_type']} • Branch {atm_current['branch_id']} • Status: **{atm_current['atm_status']}**")
             with dd_top_r:
+                badge_html = get_risk_badge_html(atm_current['risk_level'])
                 st.markdown(badge_html, unsafe_allow_html=True)
 
             m_row1, m_row2, m_row3 = st.columns(3)
